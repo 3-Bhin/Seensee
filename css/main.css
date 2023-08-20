@@ -51,7 +51,7 @@ main{
   margin-bottom: 4rem;
 }
 
-section:nth-child(even){
+section:nth-child(odd){
   text-align: center;
 }
 
