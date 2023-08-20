@@ -236,6 +236,9 @@ figcaption .btn{
 }
 
 /* section 3 */
+.sec3-content iframe{
+  border: 0;
+}
 
 
 /* 푸터 */
