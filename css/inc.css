@@ -1,0 +1,274 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* width : 1200px */
+
+/* 초기화 */
+
+html{
+  font-family: 'pretendard';
+  font-size: 62.5%;
+  font-weight: 400;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+address{
+  font-style: normal;
+}
+
+img{
+    vertical-align: top;
+    max-width: 100%;
+}
+
+/* ON */
+
+.nav-on{
+  border-bottom: 2px solid #C12127;
+}
+
+
+/* 색상 */
+
+.color-wht{
+  color: #fff;
+}
+
+.color-red{
+  color:#C12127;
+}
+
+/* 공통 요소 */
+.bg-default{
+    width: 100%;
+    background-color: #000;
+}
+.bg-gray{
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.wrap{
+  max-width: 100%;
+  width: 75%;
+  height: 100%;
+  margin: 0 12.5%;
+}
+
+/* 폰트 관련 */
+.font-ft{
+    font-size: 1.3rem;
+}
+
+.font-h1{
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.font-small{
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+.font-normal{
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+.font-lg{
+  font-size: 2rem;
+}
+.font-ban-date{
+  font-size: 2.8rem;
+}
+.font-nav{
+    font-size: 1.8rem;
+}
+
+.font-upper{
+  text-transform: uppercase;
+}
+
+/* 버튼 */
+
+.btn-normal{
+  display: inline-block;
+  width: 136px; height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  margin: 36px 10px 0;
+  transition: 0.5s;
+  }
+
+.btn-normal:hover{
+  background-color: #C12127;
+  color: #fff;
+}
+
+.btn-none{
+  background-color: inherit;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.2rem;
+  color: #fff;
+}
+
+.btn-view{
+  border: 1px solid #fff;
+  background-color: inherit;
+  color: #fff;
+  }
+
+.btn-log{
+  width: 82px;height:40px;
+  background-color: #fff;
+  font-family: 'pretendard';
+  font-size: 1.6rem;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  }
+
+.btn-more{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 헤더 */
+
+header{
+  height: 64px;
+}
+header>.wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_logo{
+  max-width: 144px;
+}
+
+/* 임시 헤더 */
+
+.gnb{display: flex;}
+.depth1_ul>li{display: inline-block;margin: 0 4rem;}
+.depth2_ul, .n6{display: none;}
+.hamburger{
+  display: none;
+}
+
+
+
+/* footer */
+footer{
+  height: 240px;
+  padding: 6.4rem 0;
+}
+
+.link-box{
+  display: flex;
+  justify-content: space-between;
+}
+.link-list{
+  display: flex;
+}
+.link-list>li{
+  display: inline-block;
+  margin-right: 4rem;
+}
+
+.sns-list>li{
+  display: inline-block;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 1rem;
+  margin-left: 2rem;
+}
+
+.info{
+  margin-top: 3.6rem;
+}
+.info-list{
+  display: flex;
+}
+.info-list:nth-child(2){
+  margin: 1rem 0;
+}
+.info-list>*{
+  margin:0 2rem;
+}
+.info-list>*:first-child{
+  margin-left: 0;
+}
+
+.info-list>*::after{
+  content: "";
+  width: 1px;
+  height: 8px;
+  background-color: #fff;
+}
+
+.link-list>li:hover,.info-list>span>a:hover{
+  color:#808080;
+}
+
+@media screen and (max-width: 1220px) {
+  .gnb{
+    display: none;
+  }
+  .btn-log{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+   
+  .sns-list{display: none;}
+
+  
+  .info-list:nth-child(2){
+    margin: 0.4rem 0;
+  }
+  
+}
+@media screen and (max-width:700px) {
+  footer{
+    height: 400px;
+    padding:32px;
+  }
+  .link-list{
+    flex-direction: column;
+  }
+  .link-list>li{
+    margin: 1rem 1rem;
+  }
+  .ft-hide{
+    display: none;
+  }
+  .info-list:last-child{
+    flex-direction: column;
+  }
+  .info-list>*{
+    margin:0.4rem 1rem 0.4rem 0;
+  }
+  .info-list>span>a{
+    display: none;
+  }
+}
+

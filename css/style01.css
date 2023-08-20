@@ -1,0 +1,297 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* 폰트 size 10px 설정 */
+html{
+  font-size: 62.5%;
+  font-weight: 300;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+address{
+  font-style: normal;
+}
+body{
+  font-family: 'pretendard';
+}
+ul, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+img{
+  vertical-align: top;
+  max-width: 100%;
+}
+h2{
+  font-size: 3.6rem;
+}
+p{
+  font-size: 1.6rem;
+}
+
+.hide{
+  display: none;
+}
+.align-center{
+  text-align: center;
+  margin: 0 auto;
+}
+.content-size{
+  width: calc(1400/1920*100%);
+  margin: 0 auto;
+}
+
+/* 요소 */
+
+/* 로그인 */
+.log{
+  width: 82px;height:40px;
+  background-color: #fff;
+  font-family: 'pretendard';
+  font-size: 1.6rem;
+  border: 0;
+  border-radius: 15px;
+}
+
+/* btn */
+
+.btn{
+  display: inline-block;
+  width: 136px; height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  color: black;
+  font-size: 1.6rem;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin: 36px 10px 0;
+}
+
+.none{
+  background-color: inherit;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-line{
+  font-size: 1.6rem;
+  padding: 0 0 1.5rem;
+}
+.btn-line::after{
+  content: "";
+  width: 74px;
+  height:2px;
+  background-color: #fff;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* 헤더 */
+header{
+  width: 100%;
+  height: 64px;
+  background-color: #000;
+}
+header > .content-size{
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gnb{
+  color: #fff;
+  font-size: 1.8rem;
+  display: flex;
+}
+.gnb>li:hover{
+  color:#ddd
+}
+.gnb li{
+  margin-left:40px;
+  margin-right:40px;
+}
+
+
+/* 메인 비주얼 */
+
+main{
+  width: 100%;
+  height:805px;
+  background-color: #111;
+  color: #fff;
+  background-image: url(../source/ban-01.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.ban-1{
+  flex-direction: column;
+}
+.ban-1 p{
+  font-size: 2rem;
+  margin: 0px 0;
+}
+
+.ban-1 p:nth-child(2){
+  margin: 32px 0 20px;
+}
+
+.ban-1 p:nth-child(3){
+  font-size: 2.8rem;
+  line-height: 150%;
+}
+.ban-1 p>span{
+  line-height: 170%;
+}
+.back{
+  position: absolute;
+  top:64px;
+  right: 0;
+}
+
+/* 본문 */
+
+/* section 1 */
+.production>h2{
+  margin: 118px auto 40px;
+}
+.pro{
+  width: 320px;
+  height: 476px;
+  margin: 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+figcaption{
+  width: 230px;
+  position: absolute;
+  top:50%;left:50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  display: none;
+}
+figcaption:hover{
+  display: block;
+}
+figcaption p{
+  font-size: 2rem;
+  line-height: 150%;
+}
+.pro-tit{
+  margin: 1.2rem 0;
+}
+.pro-date, .pro-adr{
+  font-size: 1.4rem;
+}
+.pro-adr{
+  margin: 0.8rem 0 2.4rem;
+}
+figcaption .btn{
+  margin: 22px 10px 0;
+}
+.sec_1{
+  display: flex;
+}
+
+.sec_1 li{
+  display: inline;
+}
+
+/* section 2 */
+.board{
+  width: 680px;
+  margin-right: 160px;
+}
+.board-txt ul{
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+.event{
+  width: 560px;
+}
+.sec_2{
+  display: flex;
+  justify-content: space-between;
+}
+.align{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+/* section 3 */
+
+
+/* 푸터 */
+footer{
+  width: 100%;
+  height: 240px;
+  background-color: #111;
+  color: white;
+  font-size: 1.3rem;
+  
+}
+.footer-wrap{
+  padding-top:64px;
+  position: relative;
+}
+.align-bl li{
+  display: inline-block;
+}
+.link-list>li{
+  margin-right: 40px;
+}
+.sns-list{
+  position: absolute;
+  right:calc(260/1920*100%);
+  top:64px;
+}
+
+.sns-list li a img{
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.footer-box{
+  margin-top: 36px;
+}
+.div-list{
+  display: flex;
+  margin: 0 0 10px;
+}
+.div-list > *{
+  padding-right: 40px;
+  position: relative;
+}
+
+.div-list span::after{
+  display: inline-block;
+  width: 1px;height:8px;
+  position: relative;
+  top:1px;left:0px;
+  background-color: #fff;
+  color: #fff;
+}
+
+
+
+
+

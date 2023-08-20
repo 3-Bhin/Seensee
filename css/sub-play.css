@@ -1,0 +1,304 @@
+/* btn */
+.btn-book{
+  display: block;
+  padding: 1.8rem 3rem;
+  text-align: center;
+  background-color: #C12127;
+  border-radius: 1rem;
+  margin-top: 1.2rem;
+  margin-left: 4rem;
+}
+.btn-book-mob{
+  display: none;
+  width: 96%;
+  height: 64px;
+  border-radius: 1rem;
+  background-color: #C12127;
+  text-align: center;
+  line-height: 64px;
+}
+
+.btn-date{
+  display: block;
+  padding: 1.4rem 1.2rem;
+  margin: 1.2rem 0;
+  border-radius: 1rem;
+  border: 1px solid #999;
+}
+
+.booking-time{
+  color: #999;
+  margin-bottom: 1.2rem;
+  padding:1.2rem;
+  border-radius: 1rem;
+  border:1px solid #bbb;
+}
+
+.btn-on{
+  background-color: #C12127;
+  color: #fff;
+  font-weight: 200;
+  border: none;
+}
+/* Nav */
+
+.lnb_ul{
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  color: #999;
+}
+.lnb_ul img {vertical-align: middle;}
+.lnb_li{position: relative; margin: 0 12px;}
+.lnb_li:first-child{margin-left: 0;}
+.lnb_li::after{
+  content: url(../source/icon/more.png);
+  /* vertical-align: middle; */
+  /* margin: 0 1.2rem; */
+  position: absolute;
+  top: 3px;
+  right: -20px;
+}
+.lnb_on{
+  text-decoration: dashed;
+  color:#111;
+  border-bottom: 1px solid;
+}
+.lnb_li:last-child::after{
+  content: none;
+}
+
+/* 전체 */
+
+section{
+  width: 100%;
+  display: flex;
+}
+
+.pro-detail{
+  width: 55%;
+}
+
+.pro-booking{
+  width: 38%;
+  position: fixed;
+  right:7%;
+}
+/* 좌측 */
+
+.content-ul{
+  display: flex;
+  width: 100%;
+  border-bottom:1px solid #bbb;
+  margin: 3.6rem 0;
+}
+
+.content-li{
+  padding: 2rem 2rem 1.6rem 2rem;
+}
+
+.content-li:first-child{
+  padding-left: 0px;
+}
+
+.content{
+  margin: auto;
+}
+
+/* 모바일 */
+.mob{
+  display: none;
+}
+.booking-info-mob{display: none;}
+.show-info-mob{
+  margin: 1rem 0;
+}
+/* 우측 */
+
+
+.booking-layout{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 왼쪽 박스 : 공연 정보 */
+.show-info{
+  width: 100%;
+}
+.show-info dl > div {
+  display: flex;
+  padding: 10px 0;
+}
+.show-info dl > div:last-child{
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid #bbb;
+}
+.ico-info::after{
+  content: url(/source/icon/info.png);
+  margin-left: 0.4rem;
+  position: relative;
+  bottom: -2px;
+} 
+.ico-more::after{
+  content: url(/source/icon/triangle.png);
+  margin-left: 0.4rem;
+  position: relative;
+  bottom: -2px;
+}
+
+dt{
+  width: 80px;
+}
+dd{
+  width:200px;
+  /* text-align: right; */
+}
+iframe{
+  border: 0;
+  margin-top: 1rem;
+  width: 100%;
+}
+.show-info>*{
+  margin: 1rem 0;
+}
+
+/* 오른쪽 박스 : 예매하기 */
+
+
+.booking{
+  margin-left: 4rem;
+  padding:2rem 1.2rem 0;
+  border: 1px solid #999;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.step1{
+  padding-bottom: 2.4rem;
+}
+.step1::after{
+  content:"";
+  position:absolute;
+  left:50%;top:155px;
+  transform: translate(-50%);
+  width: 100px;
+  border-bottom: 1px solid #bbb;
+}
+
+.booking-time:first-child{
+  margin-top: 1.6rem;
+}
+
+.booking-time dl>div{
+  display: flex;
+}
+.booking-time-dd{
+  width: 84px;
+}
+.booking-seet {
+  background-color: #eee;
+  margin: 0 -1.2rem;
+  padding: 2rem 1.2rem;
+}
+.booking-seet>dl>div{
+  display: flex;
+  justify-content: space-between;
+}
+.booking-seet>dl>div>dd{
+  display: inline-block;
+  width: 40px;
+}
+
+/* 미디어쿼리 */
+
+@media screen and (max-width:1220px) {
+  
+  .lnb_ul{margin-top: 3rem;margin-bottom: 3rem;}
+  .booking{
+    display:none;
+  }
+  section{
+    flex-direction: column;
+  }
+  .pro-detail{
+    width: 100%;
+    overflow: hidden;
+  }
+  .pro-booking{
+    display: none;
+    width: 100%;
+    position: absolute;
+    right:0%;
+  }
+  .mob{
+    display: flex;
+    flex-direction: column;
+  }
+  .booking-info-mob{
+    width: 40%;
+    display: flex;flex-direction: column;margin-left: 2rem;}
+  .show-info-mob{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .show-info-mob>dl>div{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 1rem 0;
+  }
+  .btn-book{
+    width: 100%;
+    text-align: center;
+    background-color: #C12127;
+    border-radius: 1rem;
+    margin-top: 1.2rem;
+    margin-left: 0rem;
+    position: relative;
+    bottom: -110px;
+  }
+  .btn-book-mob{
+    display: none;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .wrap{
+    margin: 0 5%;
+    width: 90%;
+  }
+  .lnb_ul{margin-top: 3rem;margin-bottom: 3rem;}
+  .show-info-mob{
+    margin: 0;
+  }
+  .booking-info-mob{
+    display: none;
+  }
+  .content-li{
+    padding: 1rem 1.3rem 1rem 1rem;
+  }
+  dt{
+    width: 100px;
+  }
+  dd{
+    width: 100%;
+  }
+  .btn-book-mob{
+    display: block;
+    margin:2%;
+    position: fixed;
+    left:0;bottom:0;
+  }
+}
+
+@media screen and (max-width:390px) {
+  .content-li>a{
+    display: block;
+    width: 16px;
+  }
+}
